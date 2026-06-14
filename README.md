@@ -1,22 +1,18 @@
 To get system stats in Linux, you can use built-in or terminal tools depending on whether you need real-time performance monitoring or hardware specifications.
 ## Real-Time Performance Stats
 
-* 
 * `htop`: Provides an interactive, color-coded, real-time overview of CPU, memory, and running processes. (Run sudo apt install htop if it is not installed).
 * `top`: The universal built-in utility for tracking active processes and live CPU/RAM usage.
 * `vmstat 2`: Displays system virtual memory, disk I/O, swap, and CPU activity, updating every two seconds.
-* `iostat -z 2`: Shows detailed storage drive throughput, utilization rates, and CPU metrics.
-* 
+* `iostat -z 2`: Shows detailed storage drive throughput, utilization rates, and CPU metrics. 
 
 ## Hardware & Allocation Specs
 
-* 
 * `free -h`: Displays total, used, and available RAM and Swap space in human-readable gigabytes or megabytes.
 * `df -h`: Shows disk space allocation, usage percentages, and remaining capacity for all mounted filesystems.
 * `lscpu`: Lists detailed technical architecture information about your CPU, including cores, threads, and clock speed.
 * `sudo lshw -short`: Generates a compact summary profile of all physical hardware paths and devices.
 * `uname -a`: Prints your current Linux kernel version, system architecture, and hostname. 
-* 
 
 ## Network & Connectivity Failures
 
