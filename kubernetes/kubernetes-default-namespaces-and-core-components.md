@@ -41,12 +41,12 @@ ships with out of the box — what they are, where they live, and what they do.
 
 Every Kubernetes cluster is created with four namespaces:
 
-| Namespace | Purpose |
-|-----------|---------|
-| `default` | The namespace where your resources go if you don't specify one. Meant for user workloads in small/simple clusters. |
-| `kube-system` | Houses all control plane and cluster infrastructure components. You generally don't deploy your own workloads here. |
-| `kube-public` | Readable by **all** users, including unauthenticated ones. Used for cluster-wide public information. |
-| `kube-node-lease` | Holds `Lease` objects (one per node) used for node heartbeats. |
+| Namespace | Command | Purpose |
+|-----------|---------|---------|
+| `default` | `kubectl get pods -n default` | The namespace where your resources go if you don't specify one. Meant for user workloads in small/simple clusters. |
+| `kube-system` | `kubectl get pods -n kube-system`| Houses all control plane and cluster infrastructure components. You generally don't deploy your own workloads here. |
+| `kube-public` | `kubectl get configmaps -n kube-public` | Readable by **all** users, including unauthenticated ones. Used for cluster-wide public information. |
+| `kube-node-lease` | `kubectl get leases -n kube-node-lease`| Holds `Lease` objects (one per node) used for node heartbeats. |
 
 ### `default`
 
