@@ -59,7 +59,7 @@ namespaces per team/app for isolation and RBAC.
 Contains the components that make the cluster work:
 
 - `kube-apiserver`, `kube-scheduler`, `kube-controller-manager`, `etcd`
-  (as static Pods on self-managed control planes)
+  (as [static Pods](#static-pods) on self-managed control planes)
 - `coredns` — cluster DNS / service discovery
 - `kube-proxy` — Service networking
 - CNI plugins (Calico, Cilium, Flannel, etc.)
